@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.wrapper {
+  background-image: linear-gradient(to bottom right, blue, aqua);
+
+}
+
+.loginbg {
+  background-color: red;
+  background-image: linear-gradient(to bottom right, blue, aqua);
+}
+
+.loginbutton {
+  background-image: linear-gradient(to right, red, yellow);
+  color: white;
+  width: 300px;
+  height: 35px;
+  margin-left: 90px;
+  margin-top: 15px;
+  font-size: medium;
+}
+
+.loginsolid {
+  background-color: blue;
+}
+
+.logininput {
+  width: 300px;
+  height: 30px;
+  margin-left: 90px;
+  margin-top: 15px;
+  padding-left: 115px;
+  font-size: medium;
+
+
+}
+
+.loginbox {
+  background-color: #0080ff;
+  width: 400px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 25px;
+
+
+}
+
+.loginbox2 {
+  /* background-color:"background-image: linear-gradient(to right, aqua , blue);"; */
+  height: 465px;
+  width: 500px;
+  margin-top: 400px;
+  margin-left: 40%;
+  padding-top: 1px;
+  border-radius: 25px;
+
+
+}
+
+.forgetpassword {
+  color: black;
+  margin-left: 181px;
+  font-size: medium;
+  margin-top: 35px;
+}
+
+.logintitle {
+  margin-top: 77px;
+  color: black;
+  margin-left: 217px;
+  font-size: large;
+}
+
