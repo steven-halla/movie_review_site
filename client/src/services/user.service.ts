@@ -2,8 +2,7 @@ import axios, {AxiosResponse} from 'axios';
 import {CreateUserRequest, User, UserProfile} from 'model/User';
 import {authHeader} from "./authHeader";
 import {MovieReview} from "../model/Movie";
-
-const API_URL = `http://localhost:7777`;
+import {API_URL} from "./Constants";
 
 export const createUser = (user: CreateUserRequest): Promise<AxiosResponse<User>> => {
   return axios.post(API_URL + '/users', user, {headers: authHeader()});

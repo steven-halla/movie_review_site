@@ -1,8 +1,8 @@
 import axios, {AxiosResponse} from 'axios';
 import {authHeader} from "./authHeader";
 import {Movie, MovieReview, MovieReviewUpdateRequest} from "model/Movie";
+import {API_URL} from "./Constants";
 
-const API_URL = `http://localhost:7777`;
 
 export const getAllMovies = (): Promise<AxiosResponse<Movie[]>> => {
   return axios.get(API_URL + `/movies`, {headers: authHeader()});

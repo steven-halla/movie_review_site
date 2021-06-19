@@ -1,10 +1,7 @@
 import axios, {AxiosResponse} from "axios";
 import {SignInRequest, User} from "model/User";
 import {authHeader} from "./authHeader";
-
-const API_URL = "http://localhost:7777";
-
-
+import {API_URL} from "./Constants";
 
 export const signup = (email: string, password: string, displayName: string): Promise<AxiosResponse<User>> => {
   return axios
