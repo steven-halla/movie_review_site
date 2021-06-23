@@ -4,8 +4,9 @@
     <list default="true" id="59967139-0b4a-4426-8411-38ee4cae7c07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/services/Constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/Constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623982291103</updated>
-      <workItem from="1623982295090" duration="3307000" />
+      <workItem from="1623982295090" duration="3961000" />
+      <workItem from="1624139518112" duration="11000" />
+      <workItem from="1624145994146" duration="745000" />
+      <workItem from="1624324545713" duration="448000" />
+      <workItem from="1624474479634" duration="741000" />
     </task>
     <servers />
   </component>
