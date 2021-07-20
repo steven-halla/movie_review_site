@@ -140,6 +140,7 @@ const RouterlessCreateReview: FC<RouteComponentProps> = (props) => {
           multiline={true}
           onChange={(event) => setWrittenReview(event.target.value)}
           value={writtenReview}
+          inputProps={{maxLength: 150}}
           variant="outlined"
         />
       </FormControl>
