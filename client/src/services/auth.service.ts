@@ -2,6 +2,8 @@ import axios, {AxiosResponse} from "axios";
 import {SignInRequest, User} from "model/User";
 import {authHeader} from "./authHeader";
 import {API_URL} from "./Constants";
+import {getCurrentUserAuth} from "./getCurrentUserAuth";
+import {getUser} from "./user.service";
 
 export const signup = (email: string, password: string, displayName: string): Promise<AxiosResponse<User>> => {
   return axios
@@ -18,7 +20,7 @@ export const signin = (signInRequest: SignInRequest) => {
     .post(API_URL + "/auth/signin", signInRequest, {headers: authHeader()})
     .then((response) => {
       if (response.data.accessToken) {
-        const userAuth = JSON.stringify(response.data);
+        const userAuth = JSON.stringify(response.data) as any;
         console.log(`userAuth: ${userAuth}`);
         localStorage.setItem("userAuth", userAuth);
       }

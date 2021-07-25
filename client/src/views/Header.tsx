@@ -20,15 +20,25 @@ const StyleHeaderDiv = styled.div`
       background-color: #eee;
       display: flex;
       flex-flow: row nowrap;
-      justify-content: flex-end;
+      justify-content: flex-start;
       align-items: center;
 
       .link {
         margin: 10px;
+
         height: 100%;
         line-height: 50px; // set line-height = height of container (50px) and this will vertically center text.
+        white-space: nowrap;
+
+        
         &:hover {
           border-bottom: 2px solid black;
+        }
+        
+        &:last-child {
+          margin-left: auto;
+          text-align: right;
+          text-wrap: none;
         }
       }
 
@@ -57,22 +67,22 @@ const RouterlessHeader: FC<RouteComponentProps> = (props) => {
       <StyleHeaderDiv className="top-header">
         <div className="links">
           <Link
+            className={clsx("link", pathname.startsWith('/') && 'selected')}
+            to="/"
+          >
+            Movies
+          </Link>
+          <Link
             className={clsx("link", pathname.startsWith('/critics') && 'selected')}
             to="/critics"
           >
             Critics
           </Link>
           <Link
-            className={clsx("link", pathname.startsWith('/movies') && 'selected')}
-            to="/movies"
+            className={clsx("link", pathname === '/contact' && 'selected')}
+            to="/contact"
           >
-            Movies
-          </Link>
-          <Link
-            className={clsx("link", pathname === '/' && 'selected')}
-            to="/"
-          >
-            Home
+            Contact
           </Link>
           <Link
             className={clsx("link", pathname.startsWith('/profile') && 'selected')}
@@ -89,6 +99,12 @@ const RouterlessHeader: FC<RouteComponentProps> = (props) => {
       <div className="links">
         <Link className={clsx("link", pathname === '/signin' && 'selected')} to={"/signin"}>Sign In</Link>
         <Link className={clsx("link", pathname === '/signup' && 'selected')} to={"/signup"}>Sign Up</Link>
+        <Link
+          className={clsx("link", pathname === '/contact' && 'selected')}
+          to="/contact"
+        >
+          Contact
+        </Link>
       </div>
     </StyleHeaderDiv>
   )

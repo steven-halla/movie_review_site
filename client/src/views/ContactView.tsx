@@ -1,33 +1,15 @@
-import React, {useContext, useEffect} from 'react';
-import {getUser} from "../services/user.service";
-import {getCurrentUserAuth} from "../services/getCurrentUserAuth";
-import {isLoggedIn} from "../services/auth.service";
-import {UserContext} from "../services/user.context";
-import {history} from "../browserHistory";
+import React from 'react';
 
-export const HomeView = () => {
-  const {setUser} = useContext(UserContext);
-
-  useEffect(() => {
-    if (!isLoggedIn()) {
-      history.replace("/signin");
-      return;
-    }
-    const currentUser = getCurrentUserAuth();
-    getUser(currentUser.id)
-      .then(response => {
-        setUser(response.data);
-      });
-  }, []);
-
+export const ContactView = () => {
   return (
     <div>
       <div>
         <div>
-          <h1>Welcome to Tom Rotten-A movie review project</h1>
+          <h2>Welcome to Tom Rotten!</h2>
+          <h3>A movie review project.</h3>
         </div>
         <nav className="navbar navbar-light bg-info">
-          <h1>Like what you see? Connect with us on Social media!</h1>
+          <h2>Like what you see? Connect with us on Social media!</h2>
           <p><a href="https://www.facebook.com/" target="_blank"><img
             src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png" height="60"
             width="60" alt=""/></a></p>

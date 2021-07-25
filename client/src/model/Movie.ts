@@ -5,6 +5,7 @@ export interface Movie {
   title: string;
   rating: number;
   description: string;
+  imageUrl: string;
 }
 
 export interface MovieReview {

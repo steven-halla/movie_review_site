@@ -20,5 +20,8 @@ app.listen(PORT, () => console.log(`your server is running on port ${PORT}`));
 //npm run start for client
 //nodemon server.ts for server
 
+//how to update on AWS?
+//
+
 // website for aws beanstalk error
 //https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-platform-dependencies.html

@@ -3,10 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="59967139-0b4a-4426-8411-38ee4cae7c07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/CreateReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/CreateReview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/model/Movie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/model/Movie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/Constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/Constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/CriticList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/CriticList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/HomeView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/ContactView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/LoginStateHandler.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/LoginStateHandler.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/MovieList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/MovieList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/ProfileView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/ProfileView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/SigninView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/SigninView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/movie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/movie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +62,26 @@
       <workItem from="1626753450915" duration="34000" />
       <workItem from="1626753493095" duration="378000" />
       <workItem from="1626753902984" duration="36000" />
-      <workItem from="1626753946798" duration="891000" />
+      <workItem from="1626753946798" duration="2761000" />
+      <workItem from="1626907264391" duration="641000" />
+      <workItem from="1627162335240" duration="4187000" />
+      <workItem from="1627178260849" duration="3868000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;input core feature of site&quot;">
+      <created>1626754991007</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626754991007</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;input core feature of site&quot;">
+      <created>1626755007796</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626755007796</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,5 +107,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;input core feature of site&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;input core feature of site&quot;" />
   </component>
 </project>

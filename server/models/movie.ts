@@ -15,7 +15,8 @@ const defineMovieModel = (sequelize, User) => {
       },
       title: DataTypes.STRING,
       rating: DataTypes.INTEGER, // average rating, TODO
-      description: DataTypes.STRING
+      description: DataTypes.STRING,
+      imageUrl: DataTypes.STRING,
     },
     // Movie.belongsToMany(User, {
     //     through: "movie_user",

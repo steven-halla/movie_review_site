@@ -46,7 +46,7 @@ const CriticListDiv = styled.div`
       align-items: center;
 
       min-width: 240px;
-      min-height: 100px;
+      //min-height: 100px;
       display: flex;
       //border-color: #282c34;
       //background-color: blue;
@@ -65,7 +65,7 @@ const CriticListDiv = styled.div`
         flex-flow: column;
         align-items: center;
         margin-left: 70px;
-        min-height: 122px;
+        //min-height: 122px;
       }
     }
   }
@@ -111,7 +111,7 @@ const CriticUser: FC<CriticUserProps> = (props) => {
 
                 <p>{user.displayName}</p>
 
-                <p>View Profile</p>
+                {/*<p>View Profile</p>*/}
               </Box>
             </section>
           </Paper>

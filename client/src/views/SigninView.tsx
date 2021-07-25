@@ -1,4 +1,4 @@
-import React, {ChangeEvent, FC, useState} from "react";
+import React, {ChangeEvent, FC, useContext, useState} from "react";
 // import {isEmail} from "validator";
 import {signin} from "../services/auth.service";
 import {SignInRequest} from "../model/User";
@@ -6,9 +6,13 @@ import {Button, TextField} from "@material-ui/core";
 import {RouteComponentProps} from "react-router";
 import {withRouter} from "react-router-dom";
 import {Alert, AlertTitle} from '@material-ui/lab';
+import {getCurrentUserAuth} from "../services/getCurrentUserAuth";
+import {getUser} from "../services/user.service";
+import {UserContext} from "../services/user.context";
 
 export const RouterlessSigninView: FC<RouteComponentProps> = (props) => {
   const {history} = props;
+  const {setUser} = useContext(UserContext);
   const [signInRequest, setSignInRequest] = useState<SignInRequest>({} as SignInRequest);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
@@ -54,8 +58,18 @@ export const RouterlessSigninView: FC<RouteComponentProps> = (props) => {
     setLoading(true);
 
     signin(signInRequest).then(response => {
-      // check response for error;
-      history.push("/");
+
+      // fetch user, and set user state, then redirect to / (movies listing page)
+      const userAuth = getCurrentUserAuth();
+      if (userAuth != null) {
+        getUser(userAuth.id).then(authedUser => {
+          setUser(authedUser.data);
+        })
+          .finally(() => {
+            history.push("/");
+          });
+      }
+
     }, (error: any) => {
       const errorMessage = parseErrorMessageFromErrorResponse(error);
 

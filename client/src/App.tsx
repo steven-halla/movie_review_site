@@ -8,7 +8,7 @@ import {Header} from "./views/Header";
 import {SigninView} from "./views/SigninView";
 import {SignupView} from "./views/SignupView";
 import {SignoutView} from "./views/SignoutView";
-import {HomeView} from "./views/HomeView";
+import {ContactView} from "./views/ContactView";
 import {ProfileView} from "./views/ProfileView";
 import {MovieList} from "./views/MovieList";
 import {MovieView} from "./views/MovieView";
@@ -27,6 +27,9 @@ export const App = () => {
             <Header/>
             <Box p="15px">
               <Switch>
+                <Route exact path="/">
+                  <MovieList/>
+                </Route>
                 <Route exact path="/signin">
                   <SigninView/>
                 </Route>
@@ -36,8 +39,8 @@ export const App = () => {
                 <Route exact path="/signout">
                   <SignoutView/>
                 </Route>
-                <Route exact path="/">
-                  <HomeView/>
+                <Route exact path="/contact">
+                  <ContactView/>
                 </Route>
                 <Route exact path="/profile">
                   <ProfileView/>
