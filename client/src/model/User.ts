@@ -21,12 +21,3 @@ export interface CreateUserRequest {
   displayName: string;
 }
 
-// interface ApiResponse<T> {
-//     data?: T;
-//     error?: ApiError;
-// }
-//
-// interface ApiError {
-//     statusCode: number; // 404, 401, 422, 500, etc
-//     message: string;
-// }

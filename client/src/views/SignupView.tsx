@@ -21,6 +21,7 @@ const SignUpViewDiv = styled.div`
   }
 
   .email-input {
+    
     margin-right: auto;
     color: blue;
   }
