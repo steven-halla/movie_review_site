@@ -24,7 +24,8 @@ const RouterlessLoginStateHandler: FC<RouteComponentProps> = (props) => {
     }
 
     if (!isLoggedIn()) {
-      history.replace("/signin");
+      // history.replace("/signin");
+      history.replace("/movies")
     }
   }, []);
 
@@ -32,7 +33,6 @@ const RouterlessLoginStateHandler: FC<RouteComponentProps> = (props) => {
     const userAuth = getCurrentUserAuth();
     if (userAuth != null) {
       getUser(userAuth.id).then(authedUser => {
-        // console.log(authedUser);
         setUser(authedUser.data);
       });
     }
