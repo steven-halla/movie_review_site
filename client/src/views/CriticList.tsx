@@ -108,10 +108,7 @@ const CriticUser: FC<CriticUserProps> = (props) => {
           <Paper elevation={3} className="critic-paper">
             <section className="item-section">
               <Box className="item-box">
-
                 <p>{user.displayName}</p>
-
-                {/*<p>View Profile</p>*/}
               </Box>
             </section>
           </Paper>
