@@ -99,6 +99,8 @@ const RouterlessHeader: FC<RouteComponentProps> = (props) => {
       <div className="links">
         <Link className={clsx("link", pathname === '/signin' && 'selected')} to={"/signin"}>Sign In</Link>
         <Link className={clsx("link", pathname === '/signup' && 'selected')} to={"/signup"}>Sign Up</Link>
+        <Link className={clsx("link", pathname === '/movies' && 'selected')} to={"/movies"}>Movies</Link>
+
         <Link
           className={clsx("link", pathname === '/contact' && 'selected')}
           to="/contact"
