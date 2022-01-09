@@ -67,8 +67,8 @@ const RouterlessHeader: FC<RouteComponentProps> = (props) => {
       <StyleHeaderDiv className="top-header">
         <div className="links">
           <Link
-            className={clsx("link", pathname.startsWith('/') && 'selected')}
-            to="/"
+            className={clsx("link", pathname.startsWith('/movies') && 'selected')}
+            to="/movies"
           >
             Movies
           </Link>
