@@ -69,7 +69,7 @@ const RouterlessSignupView: FC<RouteComponentProps> = (props) => {
       setDisplayNameError("");
 
     } else if (event.target.value.length < 2) {
-      setDisplayNameError("Email must be 2 + characters");
+      setDisplayNameError("User name must be 2 + characters");
 
     } else {
       setDisplayNameError("");
