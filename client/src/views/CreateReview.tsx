@@ -65,7 +65,7 @@ const RouterlessCreateReview: FC<RouteComponentProps> = (props) => {
 
   const [writtenReview, setWrittenReview] = useState("");
 
-  const {id: movieIdString} = useParams<CreateReviewParams>(); // rename url id to movie id
+  const {id: movieIdString} = useParams<CreateReviewParams>();
   const movieId = Number(movieIdString);
 
   const onSubmit = () => {
