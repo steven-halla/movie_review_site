@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59967139-0b4a-4426-8411-38ee4cae7c07" name="Default Changelist" comment="">
+    <list default="true" id="59967139-0b4a-4426-8411-38ee4cae7c07" name="Default Changelist" comment="&quot;refactor&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/model/Movie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/model/Movie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/services/Constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/Constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/CriticList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/CriticList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/HomeView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/ContactView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/LoginStateHandler.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/LoginStateHandler.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/MovieList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/MovieList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/ProfileView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/ProfileView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/SigninView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/SigninView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/movie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/movie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +28,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/client/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/server/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -65,7 +52,49 @@
       <workItem from="1626753946798" duration="2761000" />
       <workItem from="1626907264391" duration="641000" />
       <workItem from="1627162335240" duration="4187000" />
-      <workItem from="1627178260849" duration="3868000" />
+      <workItem from="1627178260849" duration="4354000" />
+      <workItem from="1627510091828" duration="1215000" />
+      <workItem from="1627946283997" duration="5302000" />
+      <workItem from="1628171861283" duration="775000" />
+      <workItem from="1628201354146" duration="3000" />
+      <workItem from="1628273980904" duration="341000" />
+      <workItem from="1629730331317" duration="21000" />
+      <workItem from="1632252231508" duration="109000" />
+      <workItem from="1632322500607" duration="22000" />
+      <workItem from="1633445848496" duration="705000" />
+      <workItem from="1633634728774" duration="980000" />
+      <workItem from="1633702449124" duration="469000" />
+      <workItem from="1633712045872" duration="2904000" />
+      <workItem from="1633717796428" duration="442000" />
+      <workItem from="1633720023123" duration="45000" />
+      <workItem from="1633961595153" duration="1091000" />
+      <workItem from="1633965211414" duration="239000" />
+      <workItem from="1634005127840" duration="1015000" />
+      <workItem from="1635349543621" duration="2627000" />
+      <workItem from="1635435374618" duration="90000" />
+      <workItem from="1635436272022" duration="1143000" />
+      <workItem from="1635438771094" duration="1287000" />
+      <workItem from="1635524548657" duration="51000" />
+      <workItem from="1635551125554" duration="50000" />
+      <workItem from="1635730671616" duration="1099000" />
+      <workItem from="1635790272499" duration="2206000" />
+      <workItem from="1635886027366" duration="1098000" />
+      <workItem from="1636159419812" duration="89000" />
+      <workItem from="1636163984451" duration="23000" />
+      <workItem from="1636394907847" duration="775000" />
+      <workItem from="1636473995208" duration="1871000" />
+      <workItem from="1636691741553" duration="1335000" />
+      <workItem from="1636834663656" duration="163000" />
+      <workItem from="1636839362840" duration="46000" />
+      <workItem from="1636840366482" duration="56000" />
+      <workItem from="1636844782561" duration="1764000" />
+      <workItem from="1636927784314" duration="549000" />
+      <workItem from="1639015799662" duration="499000" />
+      <workItem from="1639093993417" duration="1617000" />
+      <workItem from="1639269396818" duration="6420000" />
+      <workItem from="1639440683660" duration="6960000" />
+      <workItem from="1639533251653" duration="4061000" />
+      <workItem from="1641695986238" duration="2414000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;input core feature of site&quot;">
       <created>1626754991007</created>
@@ -81,7 +110,56 @@
       <option name="project" value="LOCAL" />
       <updated>1626755007796</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;re factor">
+      <created>1639552425367</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639552425367</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&quot;about to update site&quot;">
+      <created>1641698300716</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641698300716</updated>
+    </task>
+    <task id="LOCAL-00005" summary="&quot;refactor&quot;">
+      <created>1641698455152</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641698455152</updated>
+    </task>
+    <task id="LOCAL-00006" summary="&quot;refactor&quot;">
+      <created>1641698608334</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641698608334</updated>
+    </task>
+    <task id="LOCAL-00007" summary="&quot;refactor&quot;">
+      <created>1641698666263</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641698666263</updated>
+    </task>
+    <task id="LOCAL-00008" summary="&quot;refactor&quot;">
+      <created>1641699056356</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1641699056356</updated>
+    </task>
+    <task id="LOCAL-00009" summary="&quot;refactor&quot;">
+      <created>1641699250800</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641699250800</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +189,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;input core feature of site&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;input core feature of site&quot;" />
+    <MESSAGE value="&quot;re factor" />
+    <MESSAGE value="&quot;about to update site&quot;" />
+    <MESSAGE value="&quot;refactor&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;refactor&quot;" />
   </component>
 </project>
