@@ -56,7 +56,9 @@ const RouterlessSignupView: FC<RouteComponentProps> = (props) => {
       setEmailError("");
 
     } else if (event.target.value.length < 2) {
-      setEmailError("Email must be 2 + characters");
+      setEmailError("Email must be 2 + characters + proper email type");
+      history.push("/signup");
+
 
     } else {
       setEmailError("");
@@ -68,8 +70,10 @@ const RouterlessSignupView: FC<RouteComponentProps> = (props) => {
     if (!event.target.value) {
       setDisplayNameError("");
 
-    } else if (event.target.value.length < 2) {
+    } else if (event.target.value.length < 2 ) {
       setDisplayNameError("User name must be 2 + characters");
+      history.push("/signup");
+
 
     } else {
       setDisplayNameError("");
@@ -83,7 +87,7 @@ const RouterlessSignupView: FC<RouteComponentProps> = (props) => {
 
     } else if (event.target.value.length < 2) {
       setPasswordError("Password must be 2+ characters");
-
+      history.push("/signup");
     } else {
       setPasswordError("");
     }
@@ -96,6 +100,8 @@ const RouterlessSignupView: FC<RouteComponentProps> = (props) => {
 
     } else { // @ts-ignore
       if (event.target.value !== user.password) {
+        setConfirmPasswordError("Password and confirm must match")
+        history.push("/signup");
 
       } else {
         setConfirmPasswordError("");
@@ -112,6 +118,7 @@ const RouterlessSignupView: FC<RouteComponentProps> = (props) => {
     // @ts-ignore
     signup(user.email, user.password, user.displayName).then(response => {
       // check response for error;
+
       history.push("/signin");
     });
   }
@@ -158,7 +165,11 @@ const RouterlessSignupView: FC<RouteComponentProps> = (props) => {
             <label htmlFor="confirmPassword"/>
             <TextField id="outlined-basic" label="Confirm Password" variant="outlined" type="password"
                        name="confirmPassword" onChange={onChangeConfirmPassword}/>
-            <p>{confirmPasswordError}</p>
+            {confirmPasswordError && (
+              <Alert severity="error">
+                <AlertTitle>{confirmPasswordError} </AlertTitle>
+              </Alert>
+            )}
           </Box>
 
           <Button variant="contained" color="primary" onClick={handleSignup}>
