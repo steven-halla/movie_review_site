@@ -2,8 +2,6 @@ import axios, {AxiosResponse} from "axios";
 import {SignInRequest, User} from "model/User";
 import {authHeader} from "./authHeader";
 import {API_URL} from "./Constants";
-import {getCurrentUserAuth} from "./getCurrentUserAuth";
-import {getUser} from "./user.service";
 
 export const signup = (email: string, password: string, displayName: string): Promise<AxiosResponse<User>> => {
   return axios
