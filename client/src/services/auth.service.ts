@@ -6,7 +6,6 @@ import {API_URL} from "./Constants";
 export const signup = (email: string, password: string, displayName: string): Promise<AxiosResponse<User>> => {
   return axios
     .post(API_URL + "/auth/signup", {
-      // displayName,
       email,
       password,
       displayName
