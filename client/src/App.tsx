@@ -46,7 +46,6 @@ export const App = () => {
                 <Route exact path="/contact">
                   <ImageSlider slides={SliderData} />
                   <ContactView/>
-
                   <Footer/>
                 </Route>
                 <Route exact path="/profile">
