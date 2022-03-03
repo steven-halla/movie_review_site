@@ -16,6 +16,10 @@ import {CreateReview} from "./views/CreateReview";
 import {CriticList} from "./views/CriticList";
 import {CriticView} from "./views/CriticView";
 import {Box} from "@material-ui/core";
+import {Footer} from "./views/Footer";
+import {ImageSlider} from "./views/ImageSlider";
+import {SliderData} from "./views/SliderData";
+
 
 export const App = () => {
   return (
@@ -40,7 +44,10 @@ export const App = () => {
                   <SignoutView/>
                 </Route>
                 <Route exact path="/contact">
+                  <ImageSlider slides={SliderData} />
                   <ContactView/>
+
+                  <Footer/>
                 </Route>
                 <Route exact path="/profile">
                   <ProfileView/>
