@@ -13,10 +13,12 @@ const StyledImageSlider = styled.div`
   .slider {
     display: flex;
     position: relative;
-    height: 50vh;
+    height: 40vh;
+    max-height: 70%;
     justify-content: center;
     align-items: center;
     padding-top: 35px;
+    padding-bottom: 45px;
   }
   @media screen and (min-width: 800px){
     .slider {
