@@ -1,48 +1,71 @@
-import React from 'react';
+import React, {FC} from 'react';
+
 import styled from "styled-components";
 
-const ContactViewDiv = styled.div`
+const StyleHeaderDiv = styled.div`
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  .tom-rotten-review {
+    margin-top: -40px;
+    
+    img {
+      width: 100%;
+      height: auto;
+      padding-top: 15px;
+    }
+    @media screen and (min-width: 600px){
+      img {
+        width: 90%;
+        margin-left: 30px;
+      }
+    }
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .example-review {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  .home-signup-link {
+    padding-left: 1.5em;
+  }
   
 `
 
-export const ContactView = () => {
-  return (
-    <ContactViewDiv>
+export const ContactView: FC = (props) => {
 
-      <div>
-        <div>
-          <div>
-            <h2>Welcome to Tom Rotten!</h2>
-            <h3>A movie review project.</h3>
-          </div>
-          <nav className="navbar navbar-light bg-info">
-            <h2>Like what you see? Connect with us on Social media!</h2>
-            <p><a href="https://www.facebook.com/" target="_blank"><img
-              src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png" height="60"
-              width="60" alt=""/></a></p>
-            <p><a href="https://twitter.com/" target="_blank"><img
-              src="https://d1e2bohyu2u2w9.cloudfront.net/education/sites/default/files/product/twitter-product-image.png"
-              height="60" width="60" alt=""/></a></p>
-            <p><a href="https://www.linkedin.com/" target="_blank"><img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS4s3k1pIajgk3Rf-07CLW-WqbfKXE2VDXFA&usqp=CAU&ec=45761791"
-              height="60" width="60" alt=""/></a></p>
-            <p><a href="https://www.pinterest.com/" target="_blank"><img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEgxnwMTT4WrNoXdjQlJZE4Vxj1Gnd8v1OGg&usqp=CAU&ec=45761791"
-              height="60" width="60" alt=""/></a></p>
-          </nav>
-        </div>
-        <div>
-          <nav className="navbar navbar-light bg-secondary">
-            <div className="col-lg-12">
-              <h2>Contact us:</h2>
-              <p>Phone: 111-111-1111</p>
-              <p>Email: noEmail@email.com </p>
-            </div>
-          </nav>
-        </div>
+  return (
+    <StyleHeaderDiv>
+
+      <div className="tom-rotten-review">
+        <p>Movie reviews in 150 characters or less!</p>
+        <p>Mobile Responsive!</p>
+        <p>This is what a tom rotten review looks like:</p>
+        <p className="movie-title">Title: Aliens</p>
+        <img src="http://robf.com.au/wp-content/uploads/2011/12/Aliens-A2S3-Briefing.png" alt="aliens"/>
       </div>
 
-    </ContactViewDiv>
+      <div className="example-review">
+        <p>By: bob_hates_good_movies</p>
+        <p>"I am not a fan of this movie. The death of the giant bug was the same as the 1st movie. Nightmare fuel."</p>
+        <p>Tom Rotten is a movie review website that is made for people that don't want to shift through pages upon pages of reviews.</p>
+        <p className="home-signup-link">Sign up is fast and easy. <a href="">sign up</a></p>
+      </div>
 
+    </StyleHeaderDiv>
   );
-}
+};
