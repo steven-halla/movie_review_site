@@ -63,7 +63,7 @@ export const ContactView: FC = (props) => {
         <p>By: bob_hates_good_movies</p>
         <p>"I am not a fan of this movie. The death of the giant bug was the same as the 1st movie. Nightmare fuel."</p>
         <p>Tom Rotten is a movie review website that is made for people that don't want to shift through pages upon pages of reviews.</p>
-        <p className="home-signup-link">Sign up is fast and easy. <a href="">sign up</a></p>
+        <p className="home-signup-link">Sign up is fast and easy. <a href="/signup">sign up</a></p>
       </div>
 
     </StyleHeaderDiv>
