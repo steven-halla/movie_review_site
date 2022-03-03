@@ -12,12 +12,14 @@ const StyleHeaderDiv = styled.div`
     height: 50px;
     display: flex;
     justify-content: center;
+  
 
     .links {
       width: 100%;
       height: 100%;
       max-width: 800px;
-      background-color: #eee;
+      //background-color: #eee;
+      background: linear-gradient(to right, #cc0404, #d74646);
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;

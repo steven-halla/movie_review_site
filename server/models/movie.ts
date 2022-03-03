@@ -1,9 +1,11 @@
+import {Movie} from "../../client/src/model/Movie";
+
 const {DataTypes} = require('sequelize');
 
 // const Movie = sequelize.define("movies", {User});
 
 
-const defineMovieModel = (sequelize, User) => {
+const defineMovieModel = (sequelize, User): Movie => {
   console.log("initializing movie model.");
 
   // we had " const Movie = ", switching this out for return
