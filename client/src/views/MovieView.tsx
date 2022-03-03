@@ -37,7 +37,6 @@ export const MovieView = () => {
 
   // @ts-ignore
   const {id} = useParams();
-  // const {userId} = useParams();
 
   const [reviews, setReviews] = useState<MovieReview[]>([]);
 
