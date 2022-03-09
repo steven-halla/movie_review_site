@@ -1,7 +1,7 @@
 import React , { useState } from 'react';
 import axios from 'axios';
-import { Message } from "./Message";
-import { Progress } from "./Progress";
+import {Message} from "./Message";
+
 
 export const FileUpload = () => {
   const [file, setFile] = useState('');
