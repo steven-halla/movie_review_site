@@ -1,6 +1,7 @@
 import React , { useState } from 'react';
 import axios from 'axios';
 import {Message} from "./Message";
+import {Progress} from "./Progress";
 
 
 export const FileUpload = () => {
@@ -21,7 +22,7 @@ export const FileUpload = () => {
     formData.append('file', file);
 
     try {
-      const res = await axios.post('/upload', formData, {
+      const res = await axios.post('/contact', formData, {
         headers: {
           'content-Type': 'multipart/form-data'
         },
