@@ -19,6 +19,7 @@ import {Box} from "@material-ui/core";
 import {Footer} from "./views/Footer";
 import {ImageSlider} from "./views/ImageSlider";
 import {SliderData} from "./views/SliderData";
+import {FileUpload} from "./views/FileUpload";
 
 
 export const App = () => {
@@ -46,6 +47,7 @@ export const App = () => {
                 <Route exact path="/contact">
                   <ImageSlider slides={SliderData} />
                   <ContactView/>
+                  <FileUpload/>
                   <Footer/>
                 </Route>
                 <Route exact path="/profile">
