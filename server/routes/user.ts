@@ -60,11 +60,25 @@ module.exports = function (app) {
     user.findUser
   );
 
+  //image upload this is our get endpoint
+  app.get(
+    "/users/:id/profile/avatar",
+    [authJwt.verifyToken],
+    user.findUser
+  )
+
   app.post(
     "/users",
     [authJwt.verifyToken, authJwt.isAdmin],
     user.createUser
   );
+
+  //image upload this is our post endpoint
+  app.post(
+    "/users/:id/profile/avatar",
+    [authJwt.verifyToken],
+    user.updateUser
+  )
 
   app.patch(
     "/users/:id",
