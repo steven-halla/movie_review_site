@@ -27,7 +27,7 @@ const createUser = (req, res) => {
       res.json(user);
     });
 };
-
+//i should create helper function for exclude just in case I forget to put password
 const findAllUsers = (req, res) => {
   User.findAll({attributes: {exclude: ['password', 'email', 'createdAt', 'updatedAt']}})
     .then(users => res.json(users))
@@ -121,27 +121,6 @@ const getUserReviews = (req, res) => {
     })
     .catch(err => res.status(400).json(err));
 };
-
-// User.findAll({
-//     include: [
-//         {
-//             // model: Movie,
-//             as: "movies",
-//             attributes: ["id", "title", "rating"]
-//         },
-//     ],
-// });
-//
-// User.findByPk(id, {
-//     include: [
-//         {
-//             model: Movie,
-//             as: "movies",
-//             attributes: ["id", "title", "rating"]
-//         },
-//     ],
-// });
-
 
 module.exports = {
   createUser,
