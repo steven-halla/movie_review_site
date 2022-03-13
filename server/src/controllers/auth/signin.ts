@@ -34,7 +34,6 @@ export const signin = (req, res) => {
 
       const authorities = [];
       console.log(JSON.stringify(user));
-      // @ts-ignore TODO confirm model
       user.getRoles().then(roles => {
         for (let i = 0; i < roles.length; i++) {
           authorities.push("ROLE_" + roles[i].name.toUpperCase());

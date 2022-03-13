@@ -6,6 +6,9 @@
       <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/auth/isAdmin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/isAdmin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/controllers/auth/signin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/auth/signin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/controllers/auth/signup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/auth/signup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/models/defineUserModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/defineUserModel.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/routes/useUserRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/useUserRoutes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
     </list>
@@ -149,7 +152,7 @@
       <workItem from="1646260889434" duration="5375000" />
       <workItem from="1646790456204" duration="2343000" />
       <workItem from="1646792970856" duration="14917000" />
-      <workItem from="1647147120275" duration="10057000" />
+      <workItem from="1647147120275" duration="10528000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;input core feature of site&quot;">
       <created>1626754991007</created>

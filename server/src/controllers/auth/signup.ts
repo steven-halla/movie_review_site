@@ -1,6 +1,7 @@
 import {db} from "../../models";
 import {Op} from "sequelize";
 import bcrypt from "bcryptjs";
+import {Role} from "../../models/Role";
 
 export const signup = (req, res) => {
 
@@ -18,15 +19,13 @@ export const signup = (req, res) => {
           }
         }
       }).then(roles => {
-        // @ts-ignore TODO confirm model
         user.setRoles(roles).then(() => {
           res.send({message: "User registered successfully!"});
         });
       });
     } else {
-      //user role = 1
-      // @ts-ignore TODO confirm model
-      user.setRoles([1]).then(() => {
+      const userRole: Role = {id: 1, name: "user"};
+      user.setRoles([userRole]).then(() => {
         res.send({message: "user registered successfully"});
       });
     }
