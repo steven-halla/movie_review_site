@@ -1,12 +1,19 @@
-import {Movie} from "../../../client/src/model/Movie";
+import {BuildOptions, DataTypes, Model} from "sequelize";
+import {Movie} from "./Movie";
 
-const {DataTypes} = require('sequelize');
+// https://stackoverflow.com/questions/60014874/how-to-use-typescript-with-sequelize
+export interface MovieModel extends Model<Movie>, Movie {}
 
-const defineMovieModel = (sequelize, User): Movie => {
+// Note that sequelize define() returns a ModelStatic
+export type MovieStatic = typeof Model & {
+  new (values?: object, options?: BuildOptions): MovieModel;
+};
+
+export const defineMovieModel = (sequelize, User): MovieStatic => {
   console.log("initializing movie model.");
 
   // we had " const Movie = ", switching this out for return
-  const Movie = sequelize.define('movies', {
+  const Movie = <MovieStatic>sequelize.define('movies', {
       id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -16,7 +23,7 @@ const defineMovieModel = (sequelize, User): Movie => {
       rating: DataTypes.INTEGER, // average rating, TODO
       description: DataTypes.STRING,
       imageUrl: DataTypes.STRING,
-    },
+    }
   );
 
 
@@ -34,9 +41,3 @@ const defineMovieModel = (sequelize, User): Movie => {
 
   return Movie;
 };
-
-module.exports = {
-  defineMovieModel
-}
-export {};
-

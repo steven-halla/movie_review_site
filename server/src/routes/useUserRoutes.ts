@@ -1,10 +1,17 @@
-import {uploadAvatarImage} from "../controllers/user";
+import {uploadAvatarImage} from "../controllers/user/uploadAvatarImage";
+import {isAdmin} from "../auth/isAdmin";
+import {deleteReview} from "../controllers/movie/deleteReview";
+import {createUser} from "../controllers/user/createUser";
+import {findAllUsers} from "../controllers/user/findAllUsers";
+import {findUser} from "../controllers/user/findUser";
+import {getUserProfile} from "../controllers/user/getUserProfile";
+import {updateUser} from "../controllers/user/updateUser";
+import {deleteUser} from "../controllers/user/deleteUser";
+import {getUserReviews} from "../controllers/user/getUserReviews";
 
-const {authJwt} = require("../middleware");
-const user = require("../controllers/user");
-const movie_review = require("../controllers/movie")
+const {authJwt} = require("../auth");
 
-module.exports = function (app) {
+export const useUserRoutes = (app) => {
   app.use(function (req, res, next) {
     res.header(
       "Access-Control-Allow-Headers",
@@ -15,66 +22,66 @@ module.exports = function (app) {
 
   app.get(
     "/users",
-    user.findAllUsers
+    findAllUsers
   )
 
   app.get(
     "/users/:id/profile",
-    user.getUserProfile
+    getUserProfile
   );
 
   app.get(
     "/users/:id/reviews",
-    user.getUserReviews
+    getUserReviews
   );
 
   app.get(
     "/users",
     [authJwt.verifyToken/*, authJwt.isAdmin*/],
-    user.findAllUsers
+    findAllUsers
   );
 
   app.get(
     "/users/:id",
     [authJwt.verifyToken],
-    user.findUser
+    findUser
   );
 
   //image upload this is our get endpoint
   app.get(
     "/users/:id/profile/avatar",
     [authJwt.verifyToken],
-    user.findUser
+    findUser
   )
 
   app.post(
     "/users",
-    [authJwt.verifyToken, authJwt.isAdmin],
-    user.createUser
+    [authJwt.verifyToken, isAdmin],
+    createUser
   );
 
   //image upload this is our post endpoint
   app.post(
     "/users/:id/profile/avatar",
     [authJwt.verifyToken],
-    user.uploadAvatarImage
+    uploadAvatarImage
   )
 
   app.patch(
     "/users/:id",
     [authJwt.verifyToken],
-    user.updateUser
+    updateUser
   );
   app.delete(
     "/users/:id",
     [authJwt.verifyToken],
-    user.deleteUser
+    deleteUser
   );
 
   app.delete(
     "/users/reviews/:id",
     // [authJwt.verifyToken, /*authJwt.isAdmin*/],
-    movie_review.deleteReview
+    deleteReview
   );
 
   app.post(
@@ -84,6 +91,3 @@ module.exports = function (app) {
   );
 
 };
-
-
-export {}

@@ -57,7 +57,7 @@ export const MovieView = () => {
   }, []);
 
   const ratingSum: number = reviews
-    .map((review: MovieReview) => review.rating) // map MovieReview[] to number[]
+    .map((review: MovieReview) => review.rating) // map MovieReview.ts[] to number[]
     .reduce((rating1: number, rating2: number) => rating1 + rating2, 0);
 
   // ternary operator, short-hand for 'if () {} else {}'

@@ -1,6 +1,11 @@
-const express = require("express");
-const cors = require("cors");
-const fileUpload = require('express-fileupload');
+import express from "express";
+import cors from "cors";
+import fileUpload from "express-fileupload";
+import {useAuthRoutes} from "./routes/useAuthRoutes";
+import {useUserRoutes} from "./routes/useUserRoutes";
+import {useMovieRoutes} from "./routes/useMovieRoutes";
+
+import {db} from './models'; // importing inorder to init db.
 
 const app = express();
 const PORT = 8080;
@@ -11,11 +16,9 @@ app.use(express.urlencoded({extended: true}));
 
 app.use(fileUpload());
 
-require('./models/index.ts');
-
-require('./routes/auth')(app);
-require('./routes/user')(app);
-require('./routes/movie')(app);
+useAuthRoutes(app);
+useUserRoutes(app);
+useMovieRoutes(app);
 
 app.listen(PORT, () => console.log(`your server is running on port ${PORT}`));
 
