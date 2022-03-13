@@ -13,7 +13,7 @@ export const useAuthRoutes = (app) => {
   });
 
   app.post(
-    "/useAuthRoutes/signup",
+    "/auth/signup",
     [
       checkDuplicateDisplayNameOrEmail,
       checkRolesExisted
@@ -21,5 +21,5 @@ export const useAuthRoutes = (app) => {
     signup
   );
 
-  app.post("/useAuthRoutes/signin", signin);
+  app.post("/auth/signin", signin);
 };
