@@ -3,9 +3,7 @@ const {DataTypes} = require('sequelize');
 const defineMovieReviewModel = (sequelize, User, Movie): number => {
   console.log("initializing movie_review model.");
 
-  // in mysql work bench i changed our users_movies table to what is defined.
 
-  // changed movie_review to movie_reviews
   const MovieReview = sequelize.define('movie_reviews', {
       id: {
         type: DataTypes.INTEGER,
@@ -35,14 +33,6 @@ const defineMovieReviewModel = (sequelize, User, Movie): number => {
     sourceKey: 'movieId',
     foreignKey: 'id'
   });
-  // MovieReview.findAll({
-  //     where: {
-  //         movieId: 1
-  //     },
-  //     include: [User]
-  // }).then(reviews => {
-  //     console.log(JSON.stringify(reviews, null, 2));
-  // })
 
   return MovieReview;
 };

@@ -14,28 +14,6 @@ module.exports = function (app) {
     next();
   });
 
-  // app.get("/test/all", movie.allAccess);
-  //
-  // app.get(
-  //     "/test/movie",
-  //     [authJwt.verifyToken],
-  //     movie.movieBoard
-  // );
-  //
-  // app.get(
-  //     "/test/mod",
-  //     [authJwt.verifyToken, authJwt.isModerator],
-  //     movie.moderatorBoard
-  // );
-  //
-  // app.get(
-  //     "/test/admin",
-  //     [authJwt.verifyToken, authJwt.isAdmin],
-  //     movie.adminBoard
-  // );
-
-  //line 40 i added contents inside square brackets
-
   app.get(
     "/movies",
     [],
@@ -65,13 +43,12 @@ module.exports = function (app) {
 
   // movie review endpoints
 
-  // should I take review out of uRl?
   app.patch(
     "/movies/:id/reviews",
     [authJwt.verifyToken],
     movie.updateMovieReview
   );
-  // ***going to take out reviews in url to see if it works lets hope it doesn' tbreak anything***
+
   app.get(
     "/movies/:id/reviews",
     [],

@@ -27,16 +27,12 @@ const createMovie = (req, res) => {
     });
 
 };
-// movie_reviews could also be movies
-//do I need to pass in the user id?
 
-// this aligns with our movie_reviews table
 const findAllMovies = (req, res) => {
   Movie.findAll()
     .then(movies => res.json(movies))
     .catch(err => res.status(400).json(err));
 };
-
 
 const findMovie = (req, res) => {
   const movieId = req.params.id;
@@ -54,7 +50,6 @@ const updateMovie = (req, res) => {
       movie.update(req.body)
         .then(updatedMovie => res.json(updatedMovie))
         .catch(err => res.status(400).json(err));
-
     })
     .catch(err => res.status(400).json(err));
 };
@@ -68,7 +63,6 @@ const deleteMovie = (req, res) => {
     })
     .catch(err => res.status(400).json(err));
 };
-
 
 const deleteReview = (req, res) => {
   const movieReviewId = req.params.id;

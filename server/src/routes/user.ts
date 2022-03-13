@@ -1,37 +1,17 @@
+import {uploadAvatarImage} from "../controllers/user";
+
 const {authJwt} = require("../middleware");
 const user = require("../controllers/user");
 const movie_review = require("../controllers/movie")
 
-// is somethign wrong with exports?
 module.exports = function (app) {
   app.use(function (req, res, next) {
     res.header(
       "Access-Control-Allow-Headers",
-      //should I change x-access-token to auth ?
       "x-access-token, Origin, Content-type, Accept"
     );
     next();
   });
-
-  // app.get("/test/all", user.allAccess);
-
-  // app.get(
-  //     "/test/user",
-  //     [authJwt.verifyToken],
-  //     user.userBoard
-  // );
-  //
-  // app.get(
-  //     "/test/mod",
-  //     [authJwt.verifyToken, authJwt.isModerator],
-  //     user.moderatorBoard
-  // );
-  //
-  // app.get(
-  //     "/test/admin",
-  //     [authJwt.verifyToken, authJwt.isAdmin],
-  //     user.adminBoard
-  // );
 
   app.get(
     "/users",
@@ -77,7 +57,7 @@ module.exports = function (app) {
   app.post(
     "/users/:id/profile/avatar",
     [authJwt.verifyToken],
-    user.updateUser
+    user.uploadAvatarImage
   )
 
   app.patch(
@@ -97,5 +77,13 @@ module.exports = function (app) {
     movie_review.deleteReview
   );
 
+  app.post(
+    "/users/:id/profile/avatar",
+    [authJwt.verifyToken],
+    uploadAvatarImage
+  );
+
 };
+
+
 export {}

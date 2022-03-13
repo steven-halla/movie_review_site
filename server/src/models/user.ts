@@ -1,7 +1,8 @@
-const {DataTypes} = require('sequelize');
+import {DataTypes} from "sequelize";
+
 // const User = sequelize.define("users", {Movie});
 
-const defineUserModel = (sequelize) => {
+export const defineUserModel = (sequelize) => {
 
   console.log("initializing user model.");
 
@@ -13,13 +14,14 @@ const defineUserModel = (sequelize) => {
       },
       email: DataTypes.STRING,
       password: DataTypes.STRING,
-      displayName: DataTypes.STRING
+      displayName: DataTypes.STRING,
+      avatarUrl: DataTypes.STRING
     },
   );
 
 };
 
-module.exports = {
-  defineUserModel
-};
-export {};
+// module.exports = {
+//   defineUserModel
+// };
+// export {};

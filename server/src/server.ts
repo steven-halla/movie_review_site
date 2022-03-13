@@ -1,15 +1,17 @@
 const express = require("express");
 const cors = require("cors");
+const fileUpload = require('express-fileupload');
 
 const app = express();
 const PORT = 8080;
-
 
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-require('./models');
+app.use(fileUpload());
+
+require('./models/index.ts');
 
 require('./routes/auth')(app);
 require('./routes/user')(app);
@@ -20,8 +22,4 @@ app.listen(PORT, () => console.log(`your server is running on port ${PORT}`));
 //npm run start for client
 //nodemon server.ts for server
 
-//how to update on AWS?
-//
 
-// website for aws beanstalk error
-//https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-platform-dependencies.html

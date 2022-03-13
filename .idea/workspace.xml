@@ -2,8 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59967139-0b4a-4426-8411-38ee4cae7c07" name="Default Changelist" comment="&quot;refactor&quot;">
+      <change afterPath="$PROJECT_DIR$/server/src/config/database.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/models/insert_data.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/config/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/database.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/movie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/movie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/assertUserIdIsAuthed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/middleware/assertUserIdIsAuthed.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/authJwt.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/middleware/authJwt.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/middleware/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/verifySignUp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/middleware/verifySignUp.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/insert_data.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/movie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/movie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/movie_review.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/movie_review.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/role.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/role.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/fileuploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/fileuploader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/movie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/movie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +43,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1u6Nt9w4uxHLa4Dyntd7QR2A6C3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,6 +62,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/server/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/server/routes/uploadProfileAvatar.ts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="local server" type="NodeJSConfigurationType" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -94,7 +139,24 @@
       <workItem from="1639269396818" duration="6420000" />
       <workItem from="1639440683660" duration="6960000" />
       <workItem from="1639533251653" duration="4061000" />
-      <workItem from="1641695986238" duration="2414000" />
+      <workItem from="1641695986238" duration="14252000" />
+      <workItem from="1641716939275" duration="1628000" />
+      <workItem from="1641967351085" duration="15000" />
+      <workItem from="1642020583281" duration="443000" />
+      <workItem from="1642137889694" duration="3000" />
+      <workItem from="1642138365491" duration="1967000" />
+      <workItem from="1642304493122" duration="1854000" />
+      <workItem from="1642553264769" duration="9000" />
+      <workItem from="1642554540940" duration="1821000" />
+      <workItem from="1642797659714" duration="1193000" />
+      <workItem from="1642871003888" duration="1151000" />
+      <workItem from="1643657980391" duration="23000" />
+      <workItem from="1643828984591" duration="2569000" />
+      <workItem from="1645728781798" duration="2670000" />
+      <workItem from="1646260889434" duration="5375000" />
+      <workItem from="1646790456204" duration="2343000" />
+      <workItem from="1646792970856" duration="14917000" />
+      <workItem from="1647147120275" duration="666000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;input core feature of site&quot;">
       <created>1626754991007</created>
@@ -159,7 +221,196 @@
       <option name="project" value="LOCAL" />
       <updated>1641699250800</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="&quot;updated so that not logged in now shows user a list of movies&quot;">
+      <created>1641699509092</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641699509092</updated>
+    </task>
+    <task id="LOCAL-00011" summary="&quot;deleted scss file, which is no longer needed since I use styled div tags&quot;">
+      <created>1641699611105</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641699611105</updated>
+    </task>
+    <task id="LOCAL-00012" summary="&quot;fixed validations &quot;">
+      <created>1641708402294</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1641708402294</updated>
+    </task>
+    <task id="LOCAL-00013" summary="&quot;fixed validations bugs &quot;">
+      <created>1641710721821</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1641710721821</updated>
+    </task>
+    <task id="LOCAL-00014" summary="&quot;added movies to header so logged out users can at least get back to movies page if they exit out &quot;">
+      <created>1641711429823</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1641711429823</updated>
+    </task>
+    <task id="LOCAL-00015" summary="&quot;fixed underline error for movies&quot;">
+      <created>1641711624906</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1641711624906</updated>
+    </task>
+    <task id="LOCAL-00016" summary="&quot;about to do more styling&quot;">
+      <created>1642138518106</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1642138518106</updated>
+    </task>
+    <task id="LOCAL-00017" summary="&quot;about to do more styling&quot;">
+      <created>1646269736991</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1646269736991</updated>
+    </task>
+    <task id="LOCAL-00018" summary="&quot;improving header and home page&quot;">
+      <created>1646270001059</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1646270001059</updated>
+    </task>
+    <task id="LOCAL-00019" summary="&quot;improving header and home page&quot;">
+      <created>1646270547366</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1646270547366</updated>
+    </task>
+    <task id="LOCAL-00020" summary="&quot;improving header and home page&quot;">
+      <created>1646270707357</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1646270707357</updated>
+    </task>
+    <task id="LOCAL-00021" summary="&quot;improving header and home page&quot;">
+      <created>1646270716706</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1646270716706</updated>
+    </task>
+    <task id="LOCAL-00022" summary="&quot;improving header and home page&quot;">
+      <created>1646270724146</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1646270724146</updated>
+    </task>
+    <task id="LOCAL-00023" summary="&quot;improving header and home page&quot;">
+      <created>1646270780694</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1646270780694</updated>
+    </task>
+    <task id="LOCAL-00024" summary="&quot;improving header and home page&quot;">
+      <created>1646271118319</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1646271118319</updated>
+    </task>
+    <task id="LOCAL-00025" summary="&quot;improving header and home page&quot;">
+      <created>1646340322809</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1646340322809</updated>
+    </task>
+    <task id="LOCAL-00026" summary="&quot;file upload component added&quot;">
+      <created>1646791288592</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1646791288592</updated>
+    </task>
+    <task id="LOCAL-00027" summary="&quot;file upload component added&quot;">
+      <created>1646791807085</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1646791807085</updated>
+    </task>
+    <task id="LOCAL-00028" summary="&quot;progress component added&quot;">
+      <created>1646791864233</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1646791864233</updated>
+    </task>
+    <task id="LOCAL-00029" summary="&quot;working on back end for file uploader&quot;">
+      <created>1646792764364</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1646792764364</updated>
+    </task>
+    <task id="LOCAL-00030" summary="&quot;working on back end for file uploader&quot;">
+      <created>1646799537250</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1646799537250</updated>
+    </task>
+    <task id="LOCAL-00031" summary="&quot;working on back end for file uploader&quot;">
+      <created>1646802288043</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1646802288043</updated>
+    </task>
+    <task id="LOCAL-00032" summary="&quot;working on back end for file uploader&quot;">
+      <created>1646814014215</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1646814014215</updated>
+    </task>
+    <task id="LOCAL-00033" summary="&quot;working on back end for file uploader&quot;">
+      <created>1646873323531</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1646873323531</updated>
+    </task>
+    <task id="LOCAL-00034" summary="&quot;refactor&quot;">
+      <created>1646878909661</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1646878909661</updated>
+    </task>
+    <task id="LOCAL-00035" summary="&quot;refactor&quot;">
+      <created>1646967518092</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1646967518092</updated>
+    </task>
+    <task id="LOCAL-00036" summary="&quot;refactor&quot;">
+      <created>1647045457681</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1647045457681</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +442,29 @@
     <MESSAGE value="&quot;input core feature of site&quot;" />
     <MESSAGE value="&quot;re factor" />
     <MESSAGE value="&quot;about to update site&quot;" />
+    <MESSAGE value="&quot;updated so that not logged in now shows user a list of movies&quot;" />
+    <MESSAGE value="&quot;deleted scss file, which is no longer needed since I use styled div tags&quot;" />
+    <MESSAGE value="&quot;fixed validations &quot;" />
+    <MESSAGE value="&quot;fixed validations bugs &quot;" />
+    <MESSAGE value="&quot;added movies to header so logged out users can at least get back to movies page if they exit out &quot;" />
+    <MESSAGE value="&quot;fixed underline error for movies&quot;" />
+    <MESSAGE value="&quot;about to do more styling&quot;" />
+    <MESSAGE value="&quot;improving header and home page&quot;" />
+    <MESSAGE value="&quot;file upload component added&quot;" />
+    <MESSAGE value="&quot;progress component added&quot;" />
+    <MESSAGE value="&quot;working on back end for file uploader&quot;" />
     <MESSAGE value="&quot;refactor&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="&quot;refactor&quot;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/controllers/movie.ts</url>
+          <line>31</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
