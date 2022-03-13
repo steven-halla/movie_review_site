@@ -1,4 +1,7 @@
-const insertRolesData = async (Role) => {
+import {MovieStatic} from "./defineMovieModel";
+import {RoleStatic} from "./defineRoleModel";
+
+export const insertRolesData = async (Role: RoleStatic) => {
   Role.create({
     id: 1,
     name: "user"
@@ -15,16 +18,10 @@ const insertRolesData = async (Role) => {
   });
 };
 
-const insertMoviesData = async (Movie) => {
+export const insertMoviesData = async (Movie: MovieStatic) => {
   Movie.create({
     id: 1,
     title: "Batman and Robin",
     rating: 5
   })
 };
-
-module.exports = {
-  insertRolesData,
-  insertMoviesData
-};
-export {};
