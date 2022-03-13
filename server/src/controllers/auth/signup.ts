@@ -24,8 +24,7 @@ export const signup = (req, res) => {
         });
       });
     } else {
-      const userRole: Role = {id: 1, name: "user"};
-      user.setRoles([userRole]).then(() => {
+      user.setRoles([1]).then(() => {
         res.send({message: "user registered successfully"});
       });
     }

@@ -5,7 +5,7 @@ import {Role} from "./Role";
 // https://stackoverflow.com/questions/60014874/how-to-use-typescript-with-sequelize
 export interface UserModel extends Model<User>, User {
   getRoles: () => Promise<Role[]>;
-  setRoles: (roles: Role[]) => Promise<void>;
+  setRoles: (roles: Role[] | number[]) => Promise<void>;
 }
 
 // Note that sequelize define() returns a ModelStatic
