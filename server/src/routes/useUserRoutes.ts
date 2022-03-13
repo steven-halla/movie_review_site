@@ -1,5 +1,6 @@
 import {uploadAvatarImage} from "../controllers/user/uploadAvatarImage";
 import {isAdmin} from "../auth/isAdmin";
+import {verifyToken} from "../auth/verifyToken";
 import {deleteReview} from "../controllers/movie/deleteReview";
 import {createUser} from "../controllers/user/createUser";
 import {findAllUsers} from "../controllers/user/findAllUsers";
@@ -8,8 +9,6 @@ import {getUserProfile} from "../controllers/user/getUserProfile";
 import {updateUser} from "../controllers/user/updateUser";
 import {deleteUser} from "../controllers/user/deleteUser";
 import {getUserReviews} from "../controllers/user/getUserReviews";
-
-const {authJwt} = require("../auth");
 
 export const useUserRoutes = (app) => {
   app.use(function (req, res, next) {
@@ -37,56 +36,56 @@ export const useUserRoutes = (app) => {
 
   app.get(
     "/users",
-    [authJwt.verifyToken/*, authJwt.isAdmin*/],
+    [verifyToken/*, authJwt.isAdmin*/],
     findAllUsers
   );
 
   app.get(
     "/users/:id",
-    [authJwt.verifyToken],
+    [verifyToken],
     findUser
   );
 
   //image upload this is our get endpoint
   app.get(
     "/users/:id/profile/avatar",
-    [authJwt.verifyToken],
+    [verifyToken],
     findUser
   )
 
   app.post(
     "/users",
-    [authJwt.verifyToken, isAdmin],
+    [verifyToken, isAdmin],
     createUser
   );
 
   //image upload this is our post endpoint
   app.post(
     "/users/:id/profile/avatar",
-    [authJwt.verifyToken],
+    [verifyToken],
     uploadAvatarImage
   )
 
   app.patch(
     "/users/:id",
-    [authJwt.verifyToken],
+    [verifyToken],
     updateUser
   );
   app.delete(
     "/users/:id",
-    [authJwt.verifyToken],
+    [verifyToken],
     deleteUser
   );
 
   app.delete(
     "/users/reviews/:id",
-    // [authJwt.verifyToken, /*authJwt.isAdmin*/],
+    // [verifyToken, /*isAdmin*/],
     deleteReview
   );
 
   app.post(
     "/users/:id/profile/avatar",
-    [authJwt.verifyToken],
+    [verifyToken],
     uploadAvatarImage
   );
 

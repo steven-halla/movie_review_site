@@ -2,44 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59967139-0b4a-4426-8411-38ee4cae7c07" name="Default Changelist" comment="&quot;refactor&quot;">
-      <change afterPath="$PROJECT_DIR$/server/src/auth/assertUserIdIsAuthed.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/auth/isModeratorOrAdmin.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/controllers/movie/sample.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/models/MovieReview.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/routes/useAuthRoutes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/routes/useMovieRoutes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/model/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/model/User.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/MovieView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/MovieView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/database.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/insert_data.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/config/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/config/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/config/database.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/config/database.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/controllers/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/auth/signin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/controllers/movie.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/controllers/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/user/uploadAvatarImage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/middleware/assertUserIdIsAuthed.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/middleware/authJwt.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/middleware/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/middleware/verifySignUp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/checkRolesExisted.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/models/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/models/insert_data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/insertData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/models/movie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/Movie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/models/movie_review.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/models/role.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/defineRoleModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/User.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/auth.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/fileuploader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/movie.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/useUserRoutes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/isAdmin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/isAdmin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes/useUserRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/useUserRoutes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +16,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1u6Nt9w4uxHLa4Dyntd7QR2A6C3" />
   <component name="ProjectLevelVcsManager">
@@ -174,7 +149,7 @@
       <workItem from="1646260889434" duration="5375000" />
       <workItem from="1646790456204" duration="2343000" />
       <workItem from="1646792970856" duration="14917000" />
-      <workItem from="1647147120275" duration="7758000" />
+      <workItem from="1647147120275" duration="10057000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;input core feature of site&quot;">
       <created>1626754991007</created>
