@@ -83,10 +83,6 @@ export const useUserRoutes = (app) => {
     deleteReview
   );
 
-  app.post(
-    "/users/:id/profile/avatar",
-    [verifyToken],
-    uploadAvatarImage
-  );
+
 
 };
