@@ -9,8 +9,9 @@ import {getUserProfile} from "../controllers/user/getUserProfile";
 import {updateUser} from "../controllers/user/updateUser";
 import {deleteUser} from "../controllers/user/deleteUser";
 import {getUserReviews} from "../controllers/user/getUserReviews";
+import {Express} from "express";
 
-export const useUserRoutes = (app) => {
+export const useUserRoutes = (app: Express) => {
   app.use(function (req, res, next) {
     res.header(
       "Access-Control-Allow-Headers",

@@ -1,4 +1,4 @@
-import express from "express";
+import express, {Express} from "express";
 import cors from "cors";
 import fileUpload from "express-fileupload";
 import {useAuthRoutes} from "./routes/useAuthRoutes";
@@ -7,8 +7,8 @@ import {useMovieRoutes} from "./routes/useMovieRoutes";
 
 import {db} from './models'; // importing inorder to init db.
 
-const app = express();
-const PORT = 8080;
+const app: Express = express();
+const PORT: number = 8080;
 
 app.use(cors());
 app.use(express.json());

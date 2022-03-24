@@ -23,3 +23,4 @@ export const useAuthRoutes = (app) => {
 
   app.post("/auth/signin", signin);
 };
+
