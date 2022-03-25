@@ -1,6 +1,9 @@
 import {getUserIdFromJwt} from "./getUserIdFromJwt";
+import {TypedRequest} from "../lib/TypedRequest";
+import {Response, Request} from "express";
 
-export const assertUserIdIsAuthed = (req, res, expectedUserId) => {
+
+export const assertUserIdIsAuthed = (req, res: Response, expectedUserId: number) => {
   const jwtUserId = getUserIdFromJwt(req);
 
   if (jwtUserId != expectedUserId) {
@@ -9,7 +12,6 @@ export const assertUserIdIsAuthed = (req, res, expectedUserId) => {
     });
     return false;
   }
-
   return true;
 }
 
