@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59967139-0b4a-4426-8411-38ee4cae7c07" name="Default Changelist" comment="&quot;refactor&quot;">
+    <list default="true" id="59967139-0b4a-4426-8411-38ee4cae7c07" name="Default Changelist" comment="&quot; stronger types&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/user.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/user.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/auth/isAdmin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/isAdmin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/controllers/auth/signin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/auth/signin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/controllers/auth/signup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/auth/signup.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/models/defineUserModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/defineUserModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/useAuthRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/useAuthRoutes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/useUserRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/useUserRoutes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/checkDuplicateDisplayNameOrEmail.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/checkDuplicateDisplayNameOrEmail.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/checkRolesExisted.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/checkRolesExisted.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/getUserIdFromJwt.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/getUserIdFromJwt.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/isModerator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/isModerator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/isModeratorOrAdmin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/isModeratorOrAdmin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/verifyToken.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/verifyToken.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JSON&#10;JavaScript" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/server/src/models" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -153,7 +155,36 @@
       <workItem from="1646260889434" duration="5375000" />
       <workItem from="1646790456204" duration="2343000" />
       <workItem from="1646792970856" duration="14917000" />
-      <workItem from="1647147120275" duration="10913000" />
+      <workItem from="1647147120275" duration="12452000" />
+      <workItem from="1647888036010" duration="3316000" />
+      <workItem from="1648060315879" duration="10245000" />
+      <workItem from="1648145770770" duration="5321000" />
+      <workItem from="1648237435701" duration="471000" />
+      <workItem from="1648329336587" duration="1134000" />
+      <workItem from="1648331992250" duration="4518000" />
+      <workItem from="1650303165677" duration="2392000" />
+      <workItem from="1650423094431" duration="1108000" />
+      <workItem from="1650474896040" duration="2326000" />
+      <workItem from="1650654412055" duration="45000" />
+      <workItem from="1650666244644" duration="795000" />
+      <workItem from="1650738387752" duration="1496000" />
+      <workItem from="1650746062394" duration="4612000" />
+      <workItem from="1650993311954" duration="7013000" />
+      <workItem from="1651089686521" duration="811000" />
+      <workItem from="1651104633773" duration="992000" />
+      <workItem from="1651166192918" duration="191000" />
+      <workItem from="1652132409475" duration="1152000" />
+      <workItem from="1664500109040" duration="574000" />
+      <workItem from="1665955647754" duration="551000" />
+      <workItem from="1666029417968" duration="1227000" />
+      <workItem from="1667601197977" duration="295000" />
+      <workItem from="1668134135413" duration="767000" />
+      <workItem from="1668136861207" duration="1796000" />
+      <workItem from="1668142447433" duration="918000" />
+      <workItem from="1668394480782" duration="768000" />
+      <workItem from="1668395361491" duration="2870000" />
+      <workItem from="1668398359971" duration="2000" />
+      <workItem from="1668400012864" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;input core feature of site&quot;">
       <created>1626754991007</created>
@@ -407,7 +438,28 @@
       <option name="project" value="LOCAL" />
       <updated>1647045457681</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="&quot;deleted un needed route&quot;">
+      <created>1648079286664</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1648079286664</updated>
+    </task>
+    <task id="LOCAL-00038" summary="&quot; stronger types&quot;">
+      <created>1648168313698</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1648168313698</updated>
+    </task>
+    <task id="LOCAL-00039" summary="&quot; stronger types&quot;">
+      <created>1668134146795</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1668134146795</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +503,9 @@
     <MESSAGE value="&quot;progress component added&quot;" />
     <MESSAGE value="&quot;working on back end for file uploader&quot;" />
     <MESSAGE value="&quot;refactor&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;refactor&quot;" />
+    <MESSAGE value="&quot;deleted un needed route&quot;" />
+    <MESSAGE value="&quot; stronger types&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot; stronger types&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
